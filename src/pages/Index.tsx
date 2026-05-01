@@ -19,17 +19,17 @@ const ASSORTMENT = [
   },
   {
     category: "Пряники",
-    img: "https://cdn.poehali.dev/projects/ebbe9df6-9d95-438e-8cfc-08c8945d051e/files/2a921a1b-722d-4181-97ae-9554756616db.jpg",
+    img: "https://cdn.poehali.dev/projects/ebbe9df6-9d95-438e-8cfc-08c8945d051e/files/724bb390-5dc3-49a6-ab3b-6cd41661fd94.jpg",
     items: ["Пряники имбирные", "Тульские пряники", "Пряники глазированные"],
   },
   {
     category: "Сухари",
-    img: "https://cdn.poehali.dev/projects/ebbe9df6-9d95-438e-8cfc-08c8945d051e/files/6282156d-7ce5-4971-a796-46530a5751a5.jpg",
+    img: "https://cdn.poehali.dev/projects/ebbe9df6-9d95-438e-8cfc-08c8945d051e/files/f258aa45-5244-4a57-a1e7-1a0b4e5ec642.jpg",
     items: ["Сухари ванильные", "Сухари с маком", "Сухари сдобные"],
   },
   {
     category: "Сушки",
-    img: "https://cdn.poehali.dev/projects/ebbe9df6-9d95-438e-8cfc-08c8945d051e/files/15da48c6-8b37-4277-9a82-8d1a8367d528.jpg",
+    img: "https://cdn.poehali.dev/projects/ebbe9df6-9d95-438e-8cfc-08c8945d051e/files/70685c8b-9d1a-4774-9a1c-8a80ab294243.jpg",
     items: ["Сушки простые", "Сушки с маком", "Баранки горчичные"],
   },
   {
@@ -175,7 +175,7 @@ export default function Index() {
                 style={{ animationDelay: `${i * 0.06}s` }}>
                 <div className="flex items-center gap-3 mb-4">
                   {"img" in cat
-                    ? <img src={cat.img} alt={cat.category} className="w-10 h-10 rounded-lg object-cover shrink-0" />
+                    ? <img src={cat.img} alt={cat.category} className="w-10 h-10 object-contain shrink-0" />
                     : <span className="text-3xl">{cat.emoji}</span>
                   }
                   <h3 className="font-cormorant text-2xl font-semibold text-primary">{cat.category}</h3>
