@@ -95,15 +95,15 @@ export default function Index() {
       <section className="relative min-h-screen flex items-center overflow-hidden pt-16">
         <div className="absolute inset-0">
           <img src={HERO_IMG} alt="Кондитерские изделия" className="w-full h-full object-cover" />
-          <div className="absolute inset-0"
-            style={{ background: "linear-gradient(105deg, hsl(25,60%,12%) 40%, hsl(25,60%,12%)/50 70%, transparent 100%)" }} />
+          <div className="absolute inset-0 bg-black/60" />
+          <div className="absolute inset-0" style={{ background: "linear-gradient(105deg, rgba(40,18,6,0.92) 40%, rgba(40,18,6,0.65) 70%, rgba(40,18,6,0.25) 100%)" }} />
         </div>
 
         <div className="relative max-w-6xl mx-auto px-6 py-28">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-7 animate-fade-up">
+            <div className="inline-flex items-center gap-2 bg-black/40 border border-white/30 rounded-full px-4 py-1.5 mb-7 animate-fade-up backdrop-blur-sm">
               <Icon name="MapPin" size={14} className="text-[hsl(32,85%,70%)]" />
-              <span className="font-golos text-white/80 text-xs tracking-wide">Нижний Новгород</span>
+              <span className="font-golos text-white text-xs tracking-wide font-medium">Нижний Новгород</span>
             </div>
 
             <h1 className="font-cormorant text-4xl md:text-6xl font-semibold text-white leading-snug mb-5 animate-fade-up delay-100">
