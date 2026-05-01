@@ -78,16 +78,22 @@ export default function Index() {
             <span className="font-cormorant text-lg font-semibold text-primary leading-tight">ИП Пальгуева</span>
             <span className="font-golos text-[11px] text-muted-foreground leading-tight">Кондитерские изделия оптом</span>
           </div>
-          <nav className="hidden md:flex gap-6 text-sm font-golos text-foreground/65">
+          <nav className="hidden md:flex gap-6 text-sm font-golos text-foreground/90">
             <a href="#clients" className="hover:text-primary transition-colors">Клиенты</a>
             <a href="#assortment" className="hover:text-primary transition-colors">Ассортимент</a>
             <a href="#conditions" className="hover:text-primary transition-colors">Условия</a>
             <a href="#order" className="hover:text-primary transition-colors">Контакты</a>
           </nav>
-          <a href="#order"
-            className="bg-primary text-primary-foreground px-5 py-2 rounded-md text-sm font-golos font-medium hover:opacity-90 transition-opacity">
-            Заказать звонок
-          </a>
+          <div className="flex items-center gap-4">
+            <a href="tel:+78001234567" className="hidden lg:flex items-center gap-1.5 font-golos text-sm font-medium text-foreground/90 hover:text-primary transition-colors">
+              <Icon name="Phone" size={14} className="text-primary" />
+              +7 (800) 123-45-67
+            </a>
+            <a href="#order"
+              className="bg-primary text-primary-foreground px-5 py-2 rounded-md text-sm font-golos font-medium hover:opacity-90 transition-opacity">
+              Заказать звонок
+            </a>
+          </div>
         </div>
       </header>
 
