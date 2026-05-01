@@ -19,17 +19,17 @@ const ASSORTMENT = [
   },
   {
     category: "Пряники",
-    emoji: "🍯",
+    img: "https://cdn.poehali.dev/projects/ebbe9df6-9d95-438e-8cfc-08c8945d051e/files/2a921a1b-722d-4181-97ae-9554756616db.jpg",
     items: ["Пряники имбирные", "Тульские пряники", "Пряники глазированные"],
   },
   {
     category: "Сухари",
-    emoji: "🍞",
+    img: "https://cdn.poehali.dev/projects/ebbe9df6-9d95-438e-8cfc-08c8945d051e/files/6282156d-7ce5-4971-a796-46530a5751a5.jpg",
     items: ["Сухари ванильные", "Сухари с маком", "Сухари сдобные"],
   },
   {
     category: "Сушки",
-    emoji: "🍩",
+    img: "https://cdn.poehali.dev/projects/ebbe9df6-9d95-438e-8cfc-08c8945d051e/files/15da48c6-8b37-4277-9a82-8d1a8367d528.jpg",
     items: ["Сушки простые", "Сушки с маком", "Баранки горчичные"],
   },
   {
@@ -174,7 +174,10 @@ export default function Index() {
                 className="bg-card border border-border rounded-xl p-6 hover-lift animate-fade-up"
                 style={{ animationDelay: `${i * 0.06}s` }}>
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl">{cat.emoji}</span>
+                  {"img" in cat
+                    ? <img src={cat.img} alt={cat.category} className="w-10 h-10 rounded-lg object-cover shrink-0" />
+                    : <span className="text-3xl">{cat.emoji}</span>
+                  }
                   <h3 className="font-cormorant text-2xl font-semibold text-primary">{cat.category}</h3>
                 </div>
                 <ul className="space-y-1.5">
