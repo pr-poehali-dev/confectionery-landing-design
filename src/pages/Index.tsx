@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Icon from "@/components/ui/icon";
 
-const HERO_IMG = "https://cdn.poehali.dev/projects/ebbe9df6-9d95-438e-8cfc-08c8945d051e/files/832e1261-a320-4ec1-bc0b-8b27760347b5.jpg";
+const HERO_IMG = "https://cdn.poehali.dev/projects/ebbe9df6-9d95-438e-8cfc-08c8945d051e/files/188a7f7e-e806-4960-a596-f067bac94b13.jpg";
 
 const CLIENTS = [
   { label: "Продуктовые магазины", icon: "Store" },
@@ -94,29 +94,28 @@ export default function Index() {
       {/* HERO */}
       <section className="relative min-h-screen flex items-center overflow-hidden pt-16">
         <div className="absolute inset-0">
-          <img src={HERO_IMG} alt="Кондитерские изделия" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-black/60" />
-          <div className="absolute inset-0" style={{ background: "linear-gradient(105deg, rgba(40,18,6,0.92) 40%, rgba(40,18,6,0.65) 70%, rgba(40,18,6,0.25) 100%)" }} />
+          <img src={HERO_IMG} alt="Кондитерские изделия" className="w-full h-full object-cover object-top" />
+          <div className="absolute inset-0" style={{ background: "linear-gradient(110deg, rgba(20,8,2,0.82) 35%, rgba(20,8,2,0.45) 65%, rgba(20,8,2,0.15) 100%)" }} />
         </div>
 
         <div className="relative max-w-6xl mx-auto px-6 py-28">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 bg-black/40 border border-white/30 rounded-full px-4 py-1.5 mb-7 animate-fade-up backdrop-blur-sm">
-              <Icon name="MapPin" size={14} className="text-[hsl(32,85%,70%)]" />
-              <span className="font-golos text-white text-xs tracking-wide font-medium">Нижний Новгород</span>
+            <div className="inline-flex items-center gap-2 bg-[hsl(32,85%,52%)]/20 border border-[hsl(32,85%,60%)]/50 rounded-full px-4 py-1.5 mb-7 animate-fade-up backdrop-blur-sm">
+              <Icon name="MapPin" size={14} className="text-[hsl(32,85%,72%)]" />
+              <span className="font-golos text-[hsl(32,85%,85%)] text-xs tracking-widest font-semibold uppercase">Нижний Новгород</span>
             </div>
 
-            <h1 className="font-cormorant text-4xl md:text-6xl font-semibold text-white leading-snug mb-5 animate-fade-up delay-100">
+            <h1 className="font-cormorant text-4xl md:text-6xl font-semibold text-white leading-snug mb-5 animate-fade-up delay-100" style={{ textShadow: "0 2px 16px rgba(0,0,0,0.5)" }}>
               ИП Пальгуева.<br />
-              <span className="italic">Кондитерские изделия</span><br />
+              <span className="italic text-[hsl(32,85%,78%)]">Кондитерские изделия</span><br />
               оптом в Нижнем Новгороде
             </h1>
 
-            <p className="font-golos text-[hsl(32,85%,78%)] text-base font-medium mb-3 animate-fade-up delay-200">
+            <p className="font-golos text-[hsl(32,85%,82%)] text-base font-semibold mb-3 animate-fade-up delay-200 tracking-wide">
               Печенье · Пряники · Сухари · Сушки · Конфеты · Пирожные
             </p>
 
-            <p className="font-golos text-white/65 text-base leading-relaxed mb-10 max-w-xl animate-fade-up delay-300">
+            <p className="font-golos text-white/80 text-base leading-relaxed mb-10 max-w-xl animate-fade-up delay-300">
               Поставляем кондитерские изделия оптом для продуктовых магазинов, кафе, школьных столовых и офисов. Работаем по договору, доставляем по всему Нижнему Новгороду.
             </p>
 
